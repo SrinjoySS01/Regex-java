@@ -1,7 +1,7 @@
 # Regex-java
-##Summary of regular-expression constructs
+## Summary of regular-expression constructs
 
-###Characters
+### Characters
 | Construct     | Matches |
 | ------------- |:-------------:| 
 |`x`|The character x|
@@ -19,7 +19,7 @@
 |`\e`|The escape character ('\u001B')
 |`\cx`|The control character corresponding to x
 
-###Character classes
+### Character classes
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -31,7 +31,7 @@
 |`[a-z&&[^bc]]`|a through z, except for b and c: <code>[ad-z]</code>(subtraction)
 |`[a-z&&[^m-p]]`|a through z, and not m through p: <code>[a-lq-z]</code> (subtraction)
 
-###Predefined character classes
+### Predefined character classes
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -43,7 +43,7 @@
 |`\w`|A word character: `[a-zA-Z_0-9]`
 |`\W`|A non-word character: `[^\w]`
 
-###POSIX character classes (US-ASCII only)
+### POSIX character classes (US-ASCII only)
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -61,7 +61,7 @@
 |`\p{XDigit}`|A hexadecimal digit: `[0-9a-fA-F]`
 |`\p{Space}`|A whitespace character: `[ \t\n\x0B\f\r]`
 
-###java.lang.Character classes (simple java character type)
+### java.lang.Character classes (simple java character type)
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -70,7 +70,7 @@
 |`\p{javaWhitespace}`|Equivalent to `java.lang.Character.isWhitespace()`
 |`\p{javaMirrored}`|Equivalent to `java.lang.Character.isMirrored()`
 
-###Classes for Unicode blocks and categories
+### Classes for Unicode blocks and categories
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -80,7 +80,7 @@
 |`\P{InGreek}`|Any character except one in the Greek block (negation)
 |`[\p{L}&&[^\p{Lu}]]`|Any letter except an uppercase letter (subtraction)
 
-###Boundary matchers
+### Boundary matchers
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -93,7 +93,7 @@
 |`\Z`|The end of the input but for the final terminator, if any
 |`\z`|The end of the input
 
-###Greedy quantifiers
+### Greedy quantifiers
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -104,7 +104,7 @@
 |`X{n,}`|X, at least n times
 |`X{n,m}`|X, at least n but not more than m times
 
-###Reluctant quantifiers
+### Reluctant quantifiers
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -115,7 +115,7 @@
 |`X{n,}?`|X, at least n times
 |`X{n,m}?`|X, at least n but not more than m times
 
-###Possessive quantifiers
+### Possessive quantifiers
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -126,7 +126,7 @@
 |`X{n,}+`|X, at least n times
 |`X{n,m}+`|X, at least n but not more than m times
 
-###Logical operators
+### Logical operators
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -134,13 +134,13 @@
 |<code>X&#124;Y</code>|Either X or Y
 |`(X)`|X, as a capturing group
 
-###Back references
+### Back references
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
 |`\n`|Whatever the nth capturing group matched
 
-###Quotation
+### Quotation
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
@@ -148,7 +148,7 @@
 |`\Q`|Nothing, but quotes all characters until \E
 |`\E`|Nothing, but ends quoting started by \Q
 
-###Special constructs (non-capturing)
+### Special constructs (non-capturing)
 
 | Construct     | Matches |
 | ------------- |:-------------:| 
